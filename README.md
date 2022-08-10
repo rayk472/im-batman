@@ -19,8 +19,9 @@ In the meantime, he's spending his free time cosplaying as Batman.
 ### Work History
 
 1. Content Creator - [The Gear Bunker](https://www.thegearbunker.com/author/kelin-ray/)
+2. Streamer - [The Real Militia](https://therealmilitia.com/)
 
 ### Contact
 
-- Email <kelin@therealbatman.com>
+- Email <kelin@therealmilitia>
 - [LinkedIn](https://www.linkedin.com/in/kelin-ray-601469248/)
