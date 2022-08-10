@@ -18,7 +18,4 @@ In the meantime, he's spending his free time cosplaying as Batman.
 
 ### Work History
 
-1. Corrections Officer - Washington State
-2. Field Artilleryman - Washington Army National Guard
-3. Night Auditor - Guesthouse Inn & Suites
-4. Electronics Sales Associate - OfficeMax
+1. Content Creator - [link](https://www.thegearbunker.com/author/kelin-ray/ "The Gear Bunker")
