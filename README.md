@@ -1,10 +1,10 @@
 ## Kelin Ray
 
-![I'm Batman](/FB.png "Batman")
+![I'm Batman](FB.png "Batman")
 
-### Markdown
+### Bio
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+As a corrections officer in the Pacific Northwest, Kelin Ray was responsible for tracking down fugitives and keeping the peace. He was also a member of the Inmate Recovery Team, which meant he often had to deal with disruptive or violent inmates. However, after serving in Iraq as a gunner for convoy security operations, Kelin decided to leave his corrections officer job and pursue a new career in coding. He's currently learning to code and is hoping to use his new skills to build websites or apps that can make a difference in people's lives. In the meantime, he's spending his free time cosplaying as Batman.
 
 ```markdown
 Syntax highlighted code block
