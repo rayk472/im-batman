@@ -16,6 +16,10 @@ In the meantime, he's spending his free time cosplaying as Batman.
 - Studies HTML, CSS, JavaScript, Python at [PDX Code Guild](https://pdxcodeguild.com/)
 - Also studies Django, CSS Libraries(Bootstrap/Materialize/etc.), Pip Packages
 
+### Projects
+1. Video App
+2. Article API
+
 ### Work History
 
 1. Content Creator - [The Gear Bunker](https://www.thegearbunker.com/author/kelin-ray/)
