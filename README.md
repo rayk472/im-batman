@@ -19,11 +19,12 @@ In the meantime, he's spending his free time cosplaying as Batman.
 ### Projects
 1. Video App
 2. Article API
+3. StreamTaco
 
 ### Work History
 
 1. Content Creator - [The Gear Bunker](https://www.thegearbunker.com/author/kelin-ray/)
-2. Streamer - [The Real Militia](https://therealmilitia.com/)
+2. Streamer - [The Real Militia](http://therealmilitia.com/)
 
 ### Contact
 
