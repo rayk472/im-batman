@@ -2,6 +2,8 @@ from collections import namedtuple
 from django.urls import path
 from . import views
 
+# app_name = "taco"
+
 urlpatterns = [
     # path('', views.home,name='home'),
     path('', views.dashboard, name='dashboard'),
