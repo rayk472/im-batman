@@ -120,7 +120,7 @@ STATICFILES_DIRS = [
    os.path.join(BASE_DIR, 'staticfiles')
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static', 'staticfiles')
 
 STATIC_URL = 'static/'
 
@@ -134,3 +134,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'dashboard'
 # Login to dashboard
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+#https://docs.djangoproject.com/en/3.0/ref/clickjacking/#setting-x-frame-options-for-all-responses
+#https://stackoverflow.com/questions/12639570/is-it-possible-to-use-iframe-with-localhost-address-in-source/27535039
