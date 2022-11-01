@@ -30,8 +30,8 @@
                             <div v-on:click="weeklyStats">
                                 <div class="insta-box link-box mt-3">
                                     <div class="col-md-7 text-center mx-auto">Weekly Stats</div>
-                                        <div id="tree">
-                                            </div>
+                                        </div>
+                                            <div id="tree" align="left">
                                         </div>
                                     </div>
                                 <div v-on:click="statsWarzone">
@@ -72,7 +72,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <!-- Loads Vue app and Axios JS call -->
-<script>
+<script type="text/javascript">
         
     let app = new Vue({
         el: "#app",
@@ -80,7 +80,7 @@
         data: {
             stats: null,
             matches: null,
-            week: null,
+            week: null
             // Starting values
         },
 
@@ -116,25 +116,32 @@
             },
             weeklyStats: function() {
                 // Function loads Weekly Stats from COD API
-                axios({
-                    method: 'get',
-                    url: 'https://call-of-duty-modern-warfare.p.rapidapi.com/weekly-stats/Therealmilitia/acti',
-                    headers: {
-                    'X-RapidAPI-Key': 'a16ab71102mshf83f3fb081b55a8p111fb6jsn791e5b4dbefe',
-                    'X-RapidAPI-Host': 'call-of-duty-modern-warfare.p.rapidapi.com'
-                    }
-                }).then(response => {
-                    this.week = response.data
-                    console.log(this.week)
-                    new DataTree({fpath: this.week, container: '#tree', subTreeBranches: true, subTreeRequest: li => this.week+li.data('id'), attrsAsData: 1
+                // axios({
+                //     method: 'get',
+                //     url: 'https://call-of-duty-modern-warfare.p.rapidapi.com/weekly-stats/Therealmilitia/acti',
+                //     headers: {
+                //     'X-RapidAPI-Key': 'a16ab71102mshf83f3fb081b55a8p111fb6jsn791e5b4dbefe',
+                //     'X-RapidAPI-Host': 'call-of-duty-modern-warfare.p.rapidapi.com'
+                //     }
+                // }).then(response => {
+                //     this.week = response.data                  
+                //     console.log(this.week)
+                    // Data Tree Displays Stats
+                    new DataTree({
+                        fpath: '{% static '/Json/stats.json' %}', 
+                        json: true,  
+                        container: '#tree', 
+                        subTreeBranches: true, 
+                        subTreeRequest: li => '{% static '/Json/stats.json' %}'+li.data('id'), 
+                        attrsAsData: 1
                     })
                 })
             },
         }
     })
 </script>          
-    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-    <script src="{% static '/JS/data-tree.js' %}"></script>  
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script src="{% static '/JS/data-tree.js' %}"></script>
 </body>
 
 </html>
