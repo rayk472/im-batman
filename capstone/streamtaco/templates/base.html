@@ -34,12 +34,16 @@
                                             <div id="tree" align="left">
                                         </div>
                                     </div>
-                                <div v-on:click="statsWarzone">
-                            <div class="insta-box link-box mt-3">Warzone Stats</div>
+                                <div class="insta-box link-box mt-3">
+                                    <div class="text_container">Twitch
+                                         <div id="<player div ID>">
+
+                                    </div>
+                                </div>          
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
             <!-- Links  -->
             {%for link in user_link%}
@@ -51,7 +55,16 @@
                 </a>
             </div>
             {%endfor%}
-            
+
+            <!-- Twitter API -->
+            <div class="col-md-7 text-center mx-auto">
+                <div class="insta-box link-box mt-3">
+                    <div class="text_container">Twitter<div>
+                        <a class="twitter-timeline" href="https://twitter.com/MilitiaReal?ref_src=twsrc%5Etfw"></a> 
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Footer  -->
             
@@ -116,16 +129,16 @@
             },
             weeklyStats: function() {
                 // Function loads Weekly Stats from COD API
-                // axios({
-                //     method: 'get',
-                //     url: 'https://call-of-duty-modern-warfare.p.rapidapi.com/weekly-stats/Therealmilitia/acti',
-                //     headers: {
-                //     'X-RapidAPI-Key': 'a16ab71102mshf83f3fb081b55a8p111fb6jsn791e5b4dbefe',
-                //     'X-RapidAPI-Host': 'call-of-duty-modern-warfare.p.rapidapi.com'
-                //     }
-                // }).then(response => {
-                //     this.week = response.data                  
-                //     console.log(this.week)
+                axios({
+                    method: 'get',
+                    url: 'https://call-of-duty-modern-warfare.p.rapidapi.com/weekly-stats/Therealmilitia/acti',
+                    headers: {
+                    'X-RapidAPI-Key': 'a16ab71102mshf83f3fb081b55a8p111fb6jsn791e5b4dbefe',
+                    'X-RapidAPI-Host': 'call-of-duty-modern-warfare.p.rapidapi.com'
+                    }
+                }).then(response => {
+                    this.week = response.data                  
+                    console.log(this.week)
                     // Data Tree Displays Stats
                     new DataTree({
                         fpath: '{% static '/Json/stats.json' %}', 
@@ -136,12 +149,44 @@
                         attrsAsData: 1
                     })
                 })
-            },
+            }
         }
     })
-</script>          
+</script>
 <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 <script src="{% static '/JS/data-tree.js' %}"></script>
+<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+<!-- Twitch API -->
+<script type="text/javascript">
+    var options = {
+      width: 640,
+      height: 480,
+      channel: "realmilitia",
+      video: "<video ID>",
+      collection: "<collection ID>",
+      // only needed if your site is also embedded on embed.example.com and othersite.example.com
+      parent: ["embed.example.com", "othersite.example.com"]
+    };
+    var player = new Twitch.Player("<player div ID>", options);
+    player.setVolume(0.5);
+  </script>
+  <!-- Hide divs -->
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.text_container').addClass("hidden");
+
+		$('.text_container').click(function() {
+			var $this = $(this);
+
+			if ($this.hasClass("hidden")) {
+				$(this).removeClass("hidden").addClass("visible");
+
+			} else {
+				$(this).removeClass("visible").addClass("hidden");
+			}
+		});
+	});
+</script>
 </body>
 
 </html>
