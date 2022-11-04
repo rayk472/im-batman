@@ -23,11 +23,11 @@ StreamTaco is built with the Django framework and features HTML, CSS, and Javasc
     - Image X
     - Name X
     - Games playing 
-    - Platform API's
+    - Platform API's X
 
 3. Links Section - Under Bio. Well structured.
     - Social links X
-    - Include API's for popular platforms
+    - Include API's for popular platforms X
 
 4. Search Feature - Footer
     - By Name

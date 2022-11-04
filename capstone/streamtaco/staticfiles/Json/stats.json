@@ -1,12 +1,5 @@
 {
-    "mp": {
-      "all": {
-        "properties": null
-      },
-      "mode": {},
-      "map": {}
-    },
-    "wz": {
+    "Warzone": {
       "all": {
         "properties": {
           "kills": 44,

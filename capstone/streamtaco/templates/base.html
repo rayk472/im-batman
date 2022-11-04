@@ -13,13 +13,11 @@
     <link rel="stylesheet" href="{% static '/CSS/data-tree.css' %}">
     <title>StreamTaco</title>
   </head>
-            <!-- Grid background -->
-            <div id="content">
-                <div class="container mx-auto">
-                    <div class="row mt-3 ">
+    <body><!-- Grid background -->
+        <div class="container mx-auto">
+            <div class="row mt-3 ">
 
             <!-- Profile Image  -->
-
             <div class="col-md-7 text-center mx-auto">
                 <div class="profile-image img-fluid ">
                     <img src="{{ user.profile.image_url}}" alt="Profile-picture" class="rounded-circle" style="width: 100px; height: auto;">
@@ -29,15 +27,17 @@
                         <div id="app">
                             <div v-on:click="weeklyStats">
                                 <div class="insta-box link-box mt-3">
-                                    <div id="tree" align="left">
-                                    <div class="col-md-7 text-center mx-auto">Weekly Stats</div>
-                                        </div>
+                                    <div class="col-md-7 text-center mx-auto">
+                                        <div class="text_container">Weekly Stats
+                                            <div id="tree" align="left">
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
                                 <div class="insta-box link-box mt-3">
                                     <div class="text_container">Twitch
                                          <div id="<player div ID>">
-
                                     </div>
                                 </div>          
                             </div>
@@ -146,7 +146,7 @@
                         container: '#tree', 
                         subTreeBranches: true, 
                         subTreeRequest: li => '{% static '/Json/stats.json' %}'+li.data('id'), 
-                        attrsAsData: 1
+                        attrsAsData: 1,
                     })
                 })
             }
