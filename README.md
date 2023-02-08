@@ -5,16 +5,12 @@
 ### Bio
 
 ```markdown
-As a corrections officer in the Pacific Northwest, Kelin Ray was responsible for tracking down fugitives and keeping the peace. 
-He was also a member of the Inmate Recovery Team, which meant he often had to deal with disruptive or violent inmates. 
-However, after serving in Iraq as a gunner for convoy security operations, Kelin decided to leave his corrections officer job and pursue a new career in coding. 
-He's currently learning to code and is hoping to use his new skills to build websites or apps that can make a difference in people's lives. 
-In the meantime, he's spending his free time cosplaying as Batman.
+Hi there! My name is Kelin and I am a web developer. I also have a certificate from a Python based bootcamp. In my spare time, I like to stream games on Twitch and YouTube. I've also been experimenting with AI to create content for my websites and social media channels. If you need help creating content, please let me know and I'll be happy to offer you a free example. Thanks!
 ```
 ### Skills
 
-- Studies HTML, CSS, JavaScript, Python at [PDX Code Guild](https://pdxcodeguild.com/)
-- Also studies Django, CSS Libraries(Bootstrap/Materialize/etc.), Pip Packages
+- Studied HTML, CSS, JavaScript, Python at [PDX Code Guild](https://pdxcodeguild.com/)
+- Also studied Django, CSS Libraries(Bootstrap/Materialize/etc.), Pip Packages
 
 ### Projects
 1. Video App
@@ -25,8 +21,9 @@ In the meantime, he's spending his free time cosplaying as Batman.
 
 1. Content Creator - [The Gear Bunker](https://www.thegearbunker.com/author/kelin-ray/)
 2. Streamer - [The Real Militia](http://therealmilitia.com/)
+3. AI Create - [AI Create[(aicreatedblog.blogspot.com)
 
 ### Contact
 
-- Email <kelin@therealmilitia>
+- Email <kelinray@outlook.com>
 - [LinkedIn](https://www.linkedin.com/in/kelin-ray-601469248/)
