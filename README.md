@@ -21,7 +21,7 @@ Hi there! My name is Kelin and I am a web developer. I also have a certificate f
 
 1. Content Creator - [The Gear Bunker](https://www.thegearbunker.com/author/kelin-ray/)
 2. Streamer - [The Real Militia](http://therealmilitia.com/)
-3. AI Create - [AI Create](aicreatedblog.blogspot.com)
+3. AI Creator - [AI Create](aicreatedcontent.blogspot.com)
 
 ### Contact
 
