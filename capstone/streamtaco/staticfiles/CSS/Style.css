@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+html {
+    height: 105%;
+  }
+
+/* body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: rgb(255, 255, 255);  
+    background-color: #434343;
+    background-image:linear-gradient(#434343, #282828);
+} */
+
+body {
+        position: relative;
+        border-radius: 0 !important;
+        background-color: #434343;
+        background-size: 1.3rem 1.3rem;
+        background-position:0.25rem 0.25rem;
+        background-image:
+            linear-gradient(to right, #525856 1px, transparent 1px),
+            linear-gradient(to bottom, #525856 1px, transparent 1px);
+        margin: 0;
+        color: #FCFCFC;
+    }
+
+#content {
+    background-color: transparent;
+    background-image:       linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
+    height:100%;
+    background-size:50px 50px;
+}
+
+
+nav {
+    background-color: #FCFCFC;
+    box-shadow: 0 5px 15px #181818;;
+
+}
+
+.dashboard-tab,
+.Profile-tab{
+    width: 50%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+
+.link-box {
+    border: 2px solid #71af3a;
+    padding: 15px 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FCFCFC;  
+    position: relative;
+}
+.link-box:hover {
+    color: rgb(0, 0, 0);
+    background-color: #71af3a;
+}
+
+.link-container {
+    flex-direction: row;
+}
+.info{
+    width: 60%;
+}
+.btns{
+    width: 40%;
+    justify-content: space-evenly;
+}
+@media screen and (max-width: 440px){
+    .link-container {
+        flex-direction: column;
+    }
+
+    .delete-btn{
+        margin-left: 30px;
+        
+    }
+
+    .info{
+        width: 100%;
+    }
+    .btns{
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+.hidden>div {
+	display:none;
+}
+
+.visible>div {
+	display:block;
+}
